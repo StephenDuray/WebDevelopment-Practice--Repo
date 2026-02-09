@@ -3,9 +3,67 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Stephen</title>
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
+
+<body class="bg-gradient-to-br from-[#BFC9D1] via-slate-300 to-white min-h-screen">
+    <header id="header" class="bg-white shadow-md fixed w-full z-50 h-16 md:h-18 transition-all duration-300">
+    <div class="container mx-auto h-full flex items-center justify-between px-6 md:relative md:justify-center">
+        
+        <a class="logo flex items-center md:absolute md:left-4 lg:-left-24" href="#home">
+            <img src="resources/letter-s.png" alt="Logo" class="h-10 w-auto md:h-12">
+            <span class="ml-2 font-bold text-lg md:hidden lg:inline">TEPHEN</span>
+        </a>
+
+        <nav class="hidden md:flex items-center space-x-8 text-sm font-semibold tracking-wide">
+            <a href="#home" class="text-gray-600 hover:text-black transition-colors">HOME</a>
+            <a href="#about" class="text-gray-600 hover:text-black transition-colors">ABOUT</a>
+            <a href="#projects" class="text-gray-600 hover:text-black transition-colors">PROJECTS</a>
+            <a href="#contact" class="text-gray-600 hover:text-black transition-colors">CONTACT</a>
+        </nav>
+
+        <button id="mobile-menu-btn" class="md:hidden text-gray-600 focus:outline-none">
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#000000" viewBox="0 0 256 256">
+                <path d="M224,128a8,8,0,0,1-8,8H40a8,8,0,0,1,0-16H216A8,8,0,0,1,224,128ZM40,72H216a8,8,0,0,0,0-16H40a8,8,0,0,0,0,16ZM216,184H40a8,8,0,0,0,0,16H216a8,8,0,0,0,0-16Z">
+                </path>
+            </svg>
+            <!-- <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"> -->
+                <!-- <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M4 6h16M4 12h16m-7 6h7"></path> -->
+            <!-- </svg> -->
+        </button>
+    </div>
+
+    <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-100 flex-col p-4 space-y-4 font-medium">
+        <a href="#home" class="text-gray-600 hover:text-black transition-colors">HOME</a>
+        <a href="#about" class="text-gray-600hover:text-black transition-colors">ABOUT</a>
+        <a href="#projects" class="text-gray-600 hover:text-black transition colors">PROJECTS</a>
+        <a href="#contact" class="text-gray-600 hover:text-black transition colors">CONTACT</a>
+    </div>
+</header>
+    <!-- <header id="header" class="bg-white shadow-md fixed w-full z-50 h-10 md:h-24 transition-transform duration-300 ease-in-out">
+        <div class="container mx-auto relative flex justify-center">
+            <a class="logo" href="#home">
+                <img src="resources/letter-s.png" alt="Logo" class="h-12 w-auto hidden absolute -left-24 top-4 md:block">
+            </a> 
+            <nav class="text-sm hidden md:flex relative nav-container">
+                <p class=" py-8 px-8">
+                    <a href="" class="text-gray-600 nav-link active uppercase">HOME</a>
+                </p>
+                <p class="py-8 px-8">
+                    <a href="#" class="text-gray-600 nav-link active uppercase">ABOUT</a>
+                </p>
+                <p class="py-8 px-8">
+                    <a hre="#" class="text-gray-600 nav-link active uppercase">PROJECT</a>
+                </p>
+                <p class="py-8 px-8 ">
+                    <a href="#" class="text-gray-600 nav-link active uppercase">CONTACT</a>
+                </p>
+                <div class="underline" style="width: 47.925px; left: 28.0063px; opacity:1;"></div>
+            </nav>
+            </div>  
+    </header> -->
+
+    </body>
     
-</body>
 </html>
