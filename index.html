@@ -1,69 +1,252 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Stephen</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <script src="js/script.js"></script>
 </head>
 
 <body class="bg-gradient-to-br from-[#BFC9D1] via-slate-300 to-white min-h-screen">
     <header id="header" class="bg-white shadow-md fixed w-full z-50 h-16 md:h-18 transition-all duration-300">
-    <div class="container mx-auto h-full flex items-center justify-between px-6 md:relative md:justify-center">
-        
-        <a class="logo flex items-center md:absolute md:left-4 lg:-left-24" href="#home">
-            <img src="resources/letter-s.png" alt="Logo" class="h-10 w-auto md:h-12">
-            <span class="ml-2 font-bold text-lg md:hidden lg:inline">TEPHEN</span>
-        </a>
+        <div class="container mx-auto h-full flex items-center justify-between px-6 md:relative md:justify-center">
 
-        <nav class="hidden md:flex items-center space-x-8 text-sm font-semibold tracking-wide">
-            <a href="#home" class="text-gray-600 hover:text-black transition-colors">HOME</a>
-            <a href="#about" class="text-gray-600 hover:text-black transition-colors">ABOUT</a>
-            <a href="#projects" class="text-gray-600 hover:text-black transition-colors">PROJECTS</a>
-            <a href="#contact" class="text-gray-600 hover:text-black transition-colors">CONTACT</a>
-        </nav>
+            <a class="logo flex items-center md:absolute md:left-4 lg:-left-24" href="#home">
+                <img src="resources/letter-s.png" alt="Logo" class="h-10 w-auto md:h-12">
+                <span class="ml-2 font-bold text-lg md:hidden lg:inline">TEPHEN</span>
+            </a>
 
-        <button id="mobile-menu-btn" class="md:hidden text-gray-600 focus:outline-none">
-            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#000000" viewBox="0 0 256 256">
-                <path d="M224,128a8,8,0,0,1-8,8H40a8,8,0,0,1,0-16H216A8,8,0,0,1,224,128ZM40,72H216a8,8,0,0,0,0-16H40a8,8,0,0,0,0,16ZM216,184H40a8,8,0,0,0,0,16H216a8,8,0,0,0,0-16Z">
-                </path>
-            </svg>
-            <!-- <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"> -->
-                <!-- <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M4 6h16M4 12h16m-7 6h7"></path> -->
-            <!-- </svg> -->
-        </button>
-    </div>
-
-    <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-100 flex-col p-4 space-y-4 font-medium">
-        <a href="#home" class="text-gray-600 hover:text-black transition-colors">HOME</a>
-        <a href="#about" class="text-gray-600hover:text-black transition-colors">ABOUT</a>
-        <a href="#projects" class="text-gray-600 hover:text-black transition colors">PROJECTS</a>
-        <a href="#contact" class="text-gray-600 hover:text-black transition colors">CONTACT</a>
-    </div>
-</header>
-    <!-- <header id="header" class="bg-white shadow-md fixed w-full z-50 h-10 md:h-24 transition-transform duration-300 ease-in-out">
-        <div class="container mx-auto relative flex justify-center">
-            <a class="logo" href="#home">
-                <img src="resources/letter-s.png" alt="Logo" class="h-12 w-auto hidden absolute -left-24 top-4 md:block">
-            </a> 
-            <nav class="text-sm hidden md:flex relative nav-container">
-                <p class=" py-8 px-8">
-                    <a href="" class="text-gray-600 nav-link active uppercase">HOME</a>
-                </p>
-                <p class="py-8 px-8">
-                    <a href="#" class="text-gray-600 nav-link active uppercase">ABOUT</a>
-                </p>
-                <p class="py-8 px-8">
-                    <a hre="#" class="text-gray-600 nav-link active uppercase">PROJECT</a>
-                </p>
-                <p class="py-8 px-8 ">
-                    <a href="#" class="text-gray-600 nav-link active uppercase">CONTACT</a>
-                </p>
-                <div class="underline" style="width: 47.925px; left: 28.0063px; opacity:1;"></div>
+            <nav class="hidden md:flex items-center space-x-8 text-sm font-semibold tracking-wide">
+                <a href="#home" class="text-gray-600 hover:text-black transition-colors">HOME</a>
+                <a href="#about" class="text-gray-600 hover:text-black transition-colors">ABOUT</a>
+                <a href="#projects" class="text-gray-600 hover:text-black transition-colors">PROJECTS</a>
+                <a href="contact.html" class="text-gray-600 hover:text-black transition-colors">CONTACT</a>
             </nav>
-            </div>  
-    </header> -->
 
-    </body>
-    
+            <button id="mobile-menu-btn" class="md:hidden text-gray-600 focus:outline-none">
+                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#000000" viewBox="0 0 256 256">
+                    <path
+                        d="M224,128a8,8,0,0,1-8,8H40a8,8,0,0,1,0-16H216A8,8,0,0,1,224,128ZM40,72H216a8,8,0,0,0,0-16H40a8,8,0,0,0,0,16ZM216,184H40a8,8,0,0,0,0,16H216a8,8,0,0,0,0-16Z">
+                    </path>
+                </svg>
+
+            </button>
+        </div>
+
+        <div id="mobile-menu"
+            class="hidden md:hidden bg-white border-t border-gray-100 flex-col p-4 space-y-4 font-medium">
+            <a href="#home" class="text-gray-600 hover:text-black transition-colors">HOME</a>
+            <a href="#about" class="text-gray-600hover:text-black transition-colors">ABOUT</a>
+            <a href="#projects" class="text-gray-600 hover:text-black transition colors">PROJECTS</a>
+            <a href="#contact" class="text-gray-600 hover:text-black transition colors">CONTACT</a>
+        </div>
+    </header>
+    <section class="pt-32 px-6">
+        <div class="container mx-auto flex flex-col md:flex-row items-center md:items-start justify-between gap-10">
+
+            <div class="flex-1">
+                <div class="mt-4">
+                    <h1 class="font-black text-6xl md:text-8xl uppercase tracking-tighter leading-[0.9]">
+                        Web Developer & <br>UI/UX <br> designer
+                    </h1>
+                </div>
+
+                <div class="mt-12">
+                    <p class="text-lg text-gray-700 max-w-lg tracking-wider">
+                        Proficient in Modern Web Development Frameworks, Web Design, and UI/UX design.
+                        From designing user-friendly interfaces to implementing advanced functionality.
+                        I provide innovative solutions that will help you connect with your audience.
+                    </p>
+                </div>
+            </div>
+
+            <div class="flex-shrink-0 mt-10 md:mt-0">
+                <img src="resources/ako.jpg" alt="Stephen Profile"
+                    class="w-64 h-80 md:w-80 md:h-[450px] object-cover rounded-2xl shadow-xl">
+            </div>
+
+        </div>
+
+    </section>
+
+    <section id="about" class="py-20 px-6 bg-gradient-to-br from-[#BFC9D1] via-slate-300 to-white ">
+        <div class="container mx-auto flex flex-col md:flex-row gap-16">
+
+            <div class="md:w-1/4">
+                <h3 class="text-xl font-bold uppercase tracking-[0.2em] text-black"> About Me</h3>
+            </div>
+
+            <div class="md:w-3/4">
+                <h2 class="text-6xl md:text-6xl font-black uppercase tracking-tighter leading-tight mb-8">
+                    Turning complex problems into <br> simple, functional designs.
+                </h2>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+                    <div>
+                        <p class="text-lg text-gray-700 max-w-lg tracking-wider mb-6">
+                            I am Stephen Duray, a Web Developer and UI/UX Designer. I specialize in building modern
+                            digital experiences that are not only visually striking but also highly functional.
+                        </p>
+                        <p class="text-lg text-gray-700 max-w-lg tracking-wider">
+                            By focusing on user-centered design and clean code, I bridge the gap between design and
+                            technology to help brands connect with their audience.
+                        </p>
+                    </div>
+
+                    <div class="border-l border-gray-200 pl-8">
+                        <h4 class="font-bold uppercase text-xs tracking-widest mb-4 text-gray-500">My Expertise</h4>
+                        <ul class="space-y-3 font-bold text-lg uppercase tracking-tight">
+                            <li>— Web Development</li>
+                            <li>— UI/UX Design</li>
+                            <li>— Git & Version Control</li>
+                            <li>— Modern Frameworks</li>
+                            <li>— Responsive Design</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="projects" class="py-20 px-6 bg-gradient-to-br from-[#BFC9D1] via-slate-300 to-white ">
+        <div class="container mx-auto">
+            <h2 class="text-xl font-bold uppercase tracking-[0.2em] text-black mb-12 text-center">
+                Projects
+            </h2>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
+
+                <div
+                    class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-2xl transition-shadow duration-300">
+                    <img src="resources/EmployeeManagementSystem.png" alt="Project 1" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Employee Management System</h3>
+                        <p class="text-gray-700 mb-4">The primary purpose of an EMS is to serve as a Universal Set for
+                            all staff-related data.</p>
+                        <a href="https://github.com/StephenDuray/EmployeeManagement/tree/master/EmployeeManagement"
+                            class="text-blue-500 hover:underline">View Project</a>
+                    </div>
+                </div>
+
+                <div
+                    class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-2xl transition-shadow duration-300">
+                    <img src="resources/CarRentalSystem.png" alt="Project 2" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Car Rental System</h3>
+                        <p class="text-gray-700 mb-4">The primary purpose of a Car Rental System is to manage the Finite
+                            Set of a company's vehicle inventory and customer transactions.</p>
+                        <a href="https://drive.google.com/drive/folders/1_E05c0KKFQBifdBHC2-P0PpOi-Di_-VW?usp=sharing"
+                            class="text-blue-500 hover:underline">View Project</a>
+                    </div>
+                </div>
+
+                <div
+                    class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-2xl transition-shadow duration-300">
+                    <img src="resources/jvscript.png" alt="Project 3" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Project Three</h3>
+                        <p class="text-gray-700 mb-4">A responsive blog platform developed using Next.js and
+                            styled-components.</p>
+                        <a href="#" class="text-blue-500 hover:underline">View Project</a>
+                    </div>
+                </div>
+
+            </div>
+    </section>
+
+    <section id="contacts" class="min-h-screen py-20 flex flex-col justify-center px-6 md:px-32  ">
+        <div class="max-w-4xl mx-auto w-full">
+            <h2 class="text-xl font-bold uppercase tracking-[0.2em] text-black mb-8 text-center md:text-left">
+                Get in Touch
+            </h2>
+
+            <form id="contact-form" class="space-y-6">
+                <div>
+                    <label class="block text-sm font-medium text-gray-700 mb-1">Name</label>
+                    <input type="text" name="name" placeholder="Your Name"
+                        class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-[#C1C7D0] outline-none transition-all">
+                </div>
+
+                <div>
+                    <label class="block text-sm font-medium text-gray-700 mb-1">Contact No.</label>
+                    <input type="tel" name="phone" placeholder="Your Phone Number"
+                        class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-[#C1C7D0] outline-none transition-all">
+                </div>
+
+                <div>
+                    <label class="block text-sm font-medium text-gray-700 mb-1">Email</label>
+                    <input type="email" name="email" placeholder="email@example.com"
+                        class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-[#C1C7D0] outline-none transition-all">
+                </div>
+
+                <div>
+                    <label class="block text-sm font-medium text-gray-700 mb-1">Message</label>
+                    <textarea name="message" rows="5" placeholder="Write your message here..."
+                        class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-[#C1C7D0] outline-none transition-all resize-none"></textarea>
+                </div>
+
+                <div class="flex justify-center md:justify-start">
+                    <button type="submit"
+                        class="bg-[#567db7] hover:bg-gray-400 text-gray-900 font-semibold px-10 py-3 rounded-full text-lg transition-all shadow-md">
+                        Send Message
+                    </button>
+                </div>
+            </form>
+
+            <div id="form-message"
+                class="mt-6 text-sm font-medium px-4 py-2 rounded w-full max-w-lg mx-auto opacity-0 transition-opacity">
+            </div>
+        </div>
+    </section>
+    <footer class="bg-white py-12 px-6 border-t border-gray-200">
+        <div class="container mx-auto flex flex-col md:flex-row items-center justify-between gap-8">
+
+            <div class="text-gray-500 text-sm font-medium order-2 md:order-1">
+                © 2026 Stephen Duray. All rights reserved.
+            </div>
+
+            <div class="flex items-center space-x-6 order-1 md:order-2">
+                <a href="#" target="_blank"
+                    class="text-gray-400 hover:text-[#1877F2] transition-colors duration-300 text-2xl">
+                    <i class="fa-brands fa-facebook"></i>
+                </a>
+                <a href="https://github.com/StephenDuray" target="_blank"
+                    class="text-gray-400 hover:text-black transition-colors duration-300 text-2xl">
+                    <i class="fa-brands fa-github"></i>
+                </a>
+                <a href="#" target="_blank"
+                    class="text-gray-400 hover:text-[#E4405F] transition-colors duration-300 text-2xl">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+                <a href="#" target="_blank"
+                    class="text-gray-400 hover:text-black transition-colors duration-300 text-2xl">
+                    <i class="fa-brands fa-x-twitter"></i>
+                </a>
+            </div>
+            
+            <div class="hidden lg:flex items-center space-x-6 order-3">
+                <a href="#" target="_blank"
+                    class="text-gray-400 hover:text-[#1877F2] transition-colors duration-300 text-xl">
+                    <i class="fa-brands fa-facebook"></i>
+                </a>
+                <a href="#" target="_blank"
+                    class="text-gray-400 hover:text-[#E4405F] transition-colors duration-300 text-xl">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+                <a href="#" target="_blank"
+                    class="text-gray-400 hover:text-black transition-colors duration-300 text-xl">
+                    <i class="fa-brands fa-x-twitter"></i>
+                </a>
+                <a href="https://github.com/StephenDuray" target="_blank"
+                    class="text-gray-400 hover:text-black transition-colors duration-300 text-xl">
+                    <i class="fa-brands fa-github"></i>
+                </a>
+            </div>
+    </footer>
+
+</body>
+
 </html>

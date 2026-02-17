@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stephen</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <header id="header" class="bg-white shadow-md fixed w-full z-50 h-16 md:h-18 transition-all duration-300">
+        <div class="container mx-auto h-full flex items-center justify-between px-6 md:relative md:justify-center">
+
+            <a class="logo flex items-center md:absolute md:left-4 lg:-left-24" href="#home">
+                <img src="resources/letter-s.png" alt="Logo" class="h-10 w-auto md:h-12">
+                <span class="ml-2 font-bold text-lg md:hidden lg:inline">TEPHEN</span>
+            </a>
+
+            <nav class="hidden md:flex items-center space-x-8 text-sm font-semibold tracking-wide">
+                <a href="index.html" class="text-gray-600 hover:text-black transition-colors">HOME</a>
+                <a href="about.html" class="text-gray-600 hover:text-black transition-colors">ABOUT</a>
+                <a href="#projects" class="text-gray-600 hover:text-black transition-colors">PROJECTS</a>
+                <a href="contact.html" class="text-gray-600 hover:text-black transition-colors">CONTACT</a>
+            </nav>
+
+            <button id="mobile-menu-btn" class="md:hidden text-gray-600 focus:outline-none">
+                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#000000" viewBox="0 0 256 256">
+                    <path
+                        d="M224,128a8,8,0,0,1-8,8H40a8,8,0,0,1,0-16H216A8,8,0,0,1,224,128ZM40,72H216a8,8,0,0,0,0-16H40a8,8,0,0,0,0,16ZM216,184H40a8,8,0,0,0,0,16H216a8,8,0,0,0,0-16Z">
+                    </path>
+                </svg>
+
+            </button>
+        </div>
+
+        <div id="mobile-menu"
+            class="hidden md:hidden bg-white border-t border-gray-100 flex-col p-4 space-y-4 font-medium">
+            <a href="#home" class="text-gray-600 hover:text-black transition-colors">HOME</a>
+            <a href="#about" class="text-gray-600hover:text-black transition-colors">ABOUT</a>
+            <a href="#projects" class="text-gray-600 hover:text-black transition colors">PROJECTS</a>
+            <a href="#contact" class="text-gray-600 hover:text-black transition colors">CONTACT</a>
+        </div>
+    </header>
+    <section id="about" class="py-20 px-6 bg-gradient-to-br from-[#BFC9D1] via-slate-300 to-white ">
+        <div class="container mx-auto flex flex-col md:flex-row gap-16">
+
+            <div class="md:w-1/4">
+                <h3 class="text-xl font-bold uppercase tracking-[0.2em] text-black"> About Me</h3>
+            </div>
+
+            <div class="md:w-3/4">
+                <h2 class="text-6xl md:text-6xl font-black uppercase tracking-tighter leading-tight mb-8">
+                    Turning complex problems into <br> simple, functional designs.
+                </h2>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+                    <div>
+                        <p class="text-lg text-gray-700 max-w-lg tracking-wider mb-6">
+                            I am Stephen Duray, a Web Developer and UI/UX Designer. I specialize in building modern
+                            digital experiences that are not only visually striking but also highly functional.
+                        </p>
+                        <p class="text-lg text-gray-700 max-w-lg tracking-wider">
+                            By focusing on user-centered design and clean code, I bridge the gap between design and
+                            technology to help brands connect with their audience.
+                        </p>
+                    </div>
+
+                    <div class="border-l border-gray-200 pl-8">
+                        <h4 class="font-bold uppercase text-xs tracking-widest mb-4 text-gray-500">My Expertise</h4>
+                        <ul class="space-y-3 font-bold text-lg uppercase tracking-tight">
+                            <li>— Web Development</li>
+                            <li>— UI/UX Design</li>
+                            <li>— Git & Version Control</li>
+                            <li>— Modern Frameworks</li>
+                            <li>— Responsive Design</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+</body>
+
+</html>

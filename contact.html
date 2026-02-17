@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Stephen</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="js/script.js"></script>
+</head>
+
+<body>
+  <header id="header" class="bg-white shadow-md fixed w-full z-50 h-16 md:h-18 transition-all duration-300">
+    <div class="container mx-auto h-full flex items-center justify-between px-6 md:relative md:justify-center">
+
+      <a class="logo flex items-center md:absolute md:left-4 lg:-left-24" href="#home">
+        <img src="resources/letter-s.png" alt="Logo" class="h-10 w-auto md:h-12">
+        <span class="ml-2 font-bold text-lg md:hidden lg:inline">TEPHEN</span>
+      </a>
+
+      <nav class="hidden md:flex items-center space-x-8 text-sm font-semibold tracking-wide">
+        <a href="index.html" class="text-gray-600 hover:text-black transition-colors">HOME</a>
+        <a href="about.html" class="text-gray-600 hover:text-black transition-colors">ABOUT</a>
+        <a href="#projects" class="text-gray-600 hover:text-black transition-colors">PROJECTS</a>
+        <a href="contact.html" class="text-gray-600 hover:text-black transition-colors">CONTACT</a>
+      </nav>
+
+      <button id="mobile-menu-btn" class="md:hidden text-gray-600 focus:outline-none">
+        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#000000" viewBox="0 0 256 256">
+          <path
+            d="M224,128a8,8,0,0,1-8,8H40a8,8,0,0,1,0-16H216A8,8,0,0,1,224,128ZM40,72H216a8,8,0,0,0,0-16H40a8,8,0,0,0,0,16ZM216,184H40a8,8,0,0,0,0,16H216a8,8,0,0,0,0-16Z">
+          </path>
+        </svg>
+
+      </button>
+    </div>
+
+    <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-100 flex-col p-4 space-y-4 font-medium">
+      <a href="#home" class="text-gray-600 hover:text-black transition-colors">HOME</a>
+      <a href="#about" class="text-gray-600hover:text-black transition-colors">ABOUT</a>
+      <a href="#projects" class="text-gray-600 hover:text-black transition colors">PROJECTS</a>
+      <a href="#contact" class="text-gray-600 hover:text-black transition colors">CONTACT</a>
+    </div>
+  </header>
+
+  <section id="contacts"
+    class="min-h-screen py-20 flex flex-col justify-center px-6 md:px-32 bg-gradient-to-br from-[#BFC9D1] via-slate-300 to-white ">
+    <div class="max-w-4xl mx-auto w-full">
+      <h2 class="text-3xl md:text-4xl font-serif text-black uppercase tracking-widest mb-8 text-center md:text-left">
+        Get in Touch
+      </h2>
+
+      <form id="contact-form" class="space-y-6">
+        <div>
+          <label class="block text-sm font-medium text-gray-700 mb-1">Name</label>
+          <input type="text" name="name" placeholder="Your Name"
+            class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-[#C1C7D0] outline-none transition-all">
+        </div>
+
+        <div>
+          <label class="block text-sm font-medium text-gray-700 mb-1">Contact No.</label>
+          <input type="tel" name="phone" placeholder="Your Phone Number"
+            class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-[#C1C7D0] outline-none transition-all">
+        </div>
+
+        <div>
+          <label class="block text-sm font-medium text-gray-700 mb-1">Email</label>
+          <input type="email" name="email" placeholder="email@example.com"
+            class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-[#C1C7D0] outline-none transition-all">
+        </div>
+
+        <div>
+          <label class="block text-sm font-medium text-gray-700 mb-1">Message</label>
+          <textarea name="message" rows="5" placeholder="Write your message here..."
+            class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-[#C1C7D0] outline-none transition-all resize-none"></textarea>
+        </div>
+
+        <div class="flex justify-center md:justify-start">
+          <button type="submit"
+            class="bg-blue-500 hover:bg-gray-400 text-gray-900 font-semibold px-10 py-3 rounded-full text-lg transition-all shadow-md">
+            Send Message
+          </button>
+        </div>
+      </form>
+
+      <div id="form-message"
+        class="mt-6 text-sm font-medium px-4 py-2 rounded w-full max-w-lg mx-auto opacity-0 transition-opacity"></div>
+    </div>
+  </section>
+
+</body>
+
+</html>
