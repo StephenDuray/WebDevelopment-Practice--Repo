@@ -1,80 +1,110 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Stephen</title>
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
+
 <body>
-     <header id="header" class="bg-white shadow-md fixed w-full z-50 h-16 md:h-18 transition-all duration-300">
-    <div class="container mx-auto h-full flex items-center justify-between px-6 md:relative md:justify-center">
-        
-        <a class="logo flex items-center md:absolute md:left-4 lg:-left-24" href="#home">
-            <img src="resources/letter-s.png" alt="Logo" class="h-10 w-auto md:h-12">
-            <span class="ml-2 font-bold text-lg md:hidden lg:inline">TEPHEN</span>
-        </a>
+    <header id="header" class="bg-white shadow-md fixed w-full z-50 h-16 md:h-18 transition-all duration-300">
+        <div class="container mx-auto h-full flex items-center justify-between px-6 md:relative md:justify-center">
 
-        <nav class="hidden md:flex items-center space-x-8 text-sm font-semibold tracking-wide">
-            <a href="index.html" class="text-gray-600 hover:text-black transition-colors">HOME</a>
-            <a href="#about" class="text-gray-600 hover:text-black transition-colors">ABOUT</a>
-            <a href="#projects" class="text-gray-600 hover:text-black transition-colors">PROJECTS</a>
-            <a href="contact.html" class="text-gray-600 hover:text-black transition-colors">CONTACT</a>
-        </nav>
+            <a class="logo flex items-center md:absolute md:left-4 lg:-left-24" href="#home">
+                <img src="resources/letter-s.png" alt="Logo" class="h-10 w-auto md:h-12">
+                <span class="ml-2 font-bold text-lg md:hidden lg:inline">TEPHEN</span>
+            </a>
 
-        <button id="mobile-menu-btn" class="md:hidden text-gray-600 focus:outline-none">
-            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#000000" viewBox="0 0 256 256">
-                <path d="M224,128a8,8,0,0,1-8,8H40a8,8,0,0,1,0-16H216A8,8,0,0,1,224,128ZM40,72H216a8,8,0,0,0,0-16H40a8,8,0,0,0,0,16ZM216,184H40a8,8,0,0,0,0,16H216a8,8,0,0,0,0-16Z">
-                </path>
-            </svg>
-           
-        </button>
-    </div>
+            <nav class="hidden md:flex items-center space-x-8 text-sm font-semibold tracking-wide">
+                <a href="index.html" class="text-gray-600 hover:text-black transition-colors">HOME</a>
+                <a href="#about" class="text-gray-600 hover:text-black transition-colors">ABOUT</a>
+                <a href="#projects" class="text-gray-600 hover:text-black transition-colors">PROJECTS</a>
+                <a href="contact.html" class="text-gray-600 hover:text-black transition-colors">CONTACT</a>
+            </nav>
 
-    <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-100 flex-col p-4 space-y-4 font-medium">
-        <a href="#home" class="text-gray-600 hover:text-black transition-colors">HOME</a>
-        <a href="#about" class="text-gray-600hover:text-black transition-colors">ABOUT</a>
-        <a href="#projects" class="text-gray-600 hover:text-black transition colors">PROJECTS</a>
-        <a href="#contact" class="text-gray-600 hover:text-black transition colors">CONTACT</a>
-    </div>
-</header>
-   <section id="projects" class="py-20 px-6 bg-gradient-to-br from-[#BFC9D1] via-slate-300 to-white ">
-    <div class="container mx-auto">
-        <h2 class="text-xl font-bold uppercase tracking-[0.2em] text-black mb-12 text-center">
-                Projects
-        </h2>
+            <button id="mobile-menu-btn" class="md:hidden text-gray-600 focus:outline-none">
+                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#000000" viewBox="0 0 256 256">
+                    <path
+                        d="M224,128a8,8,0,0,1-8,8H40a8,8,0,0,1,0-16H216A8,8,0,0,1,224,128ZM40,72H216a8,8,0,0,0,0-16H40a8,8,0,0,0,0,16ZM216,184H40a8,8,0,0,0,0,16H216a8,8,0,0,0,0-16Z">
+                    </path>
+                </svg>
 
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
-            
-            <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-2xl transition-shadow duration-300">
-                <img src="resources/EmployeeManagementSystem.png" alt="Project 1" class="w-full h-48 object-cover">
-                <div class="p-6">
-                    <h3 class="text-xl font-bold mb-2">Employee Management System</h3>
-                    <p class="text-gray-700 mb-4">The primary purpose of an EMS is to serve as a Universal Set for all staff-related data.</p>
-                    <a href="https://github.com/StephenDuray/EmployeeManagement/tree/master/EmployeeManagement" class="text-blue-500 hover:underline">View Project</a>
-                </div>
-            </div>
-
-            <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-2xl transition-shadow duration-300">
-                <img src="resources/CarRentalSystem.png" alt="Project 2" class="w-full h-48 object-cover">
-                <div class="p-6">
-                    <h3 class="text-xl font-bold mb-2">Car Rental System</h3>
-                    <p class="text-gray-700 mb-4">The primary purpose of a Car Rental System is to manage the Finite Set of a company's vehicle inventory and customer transactions.</p>
-                    <a href="https://drive.google.com/drive/folders/1_E05c0KKFQBifdBHC2-P0PpOi-Di_-VW?usp=sharing" class="text-blue-500 hover:underline">View Project</a>
-                </div>
-            </div>
-
-            <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-2xl transition-shadow duration-300">
-                <img src="resources/jvscript.png" alt="Project 3" class="w-full h-48 object-cover">
-                <div class="p-6">
-                    <h3 class="text-xl font-bold mb-2">JavaScript</h3>
-                    <p class="text-gray-700 mb-4">A responsive blog platform developed using Next.js and styled-components.</p>
-                    <a href="#" class="text-blue-500 hover:underline">View Project</a>
-                </div>
-            </div>
-
+            </button>
         </div>
+
+        <div id="mobile-menu"
+            class="hidden md:hidden bg-white border-t border-gray-100 flex-col p-4 space-y-4 font-medium">
+            <a href="#home" class="text-gray-600 hover:text-black transition-colors">HOME</a>
+            <a href="#about" class="text-gray-600hover:text-black transition-colors">ABOUT</a>
+            <a href="#projects" class="text-gray-600 hover:text-black transition colors">PROJECTS</a>
+            <a href="#contact" class="text-gray-600 hover:text-black transition colors">CONTACT</a>
+        </div>
+    </header>
+
+    <section id="projects" class="py-20 px-6 bg-gradient-to-br from-[#BFC9D1] ">
+        <div class="container mx-auto">
+            <h2 class="text-xl font-bold uppercase tracking-[0.2em] text-black mb-12 text-center">
+                Projects
+            </h2>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
+
+                <div
+                    class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-2xl transition-shadow duration-300">
+                    <img src="resources/EmployeeManagementSystem.png" alt="Project 1" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Employee Management System</h3>
+                        <p class="text-gray-700 mb-4">The primary purpose of an EMS is to serve as a Universal Set for
+                            all staff-related data.</p>
+                        <a href="https://github.com/StephenDuray/EmployeeManagement/tree/master/EmployeeManagement"
+                            class="text-blue-500 hover:underline">View Project</a>
+                    </div>
+                </div>
+
+                <div
+                    class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-2xl transition-shadow duration-300">
+                    <img src="resources/CarRentalSystem.png" alt="Project 2" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Car Rental System</h3>
+                        <p class="text-gray-700 mb-4">The primary purpose of a Car Rental System is to manage the Finite
+                            Set of a company's vehicle inventory and customer transactions.</p>
+                        <a href="https://drive.google.com/drive/folders/1_E05c0KKFQBifdBHC2-P0PpOi-Di_-VW?usp=sharing"
+                            class="text-blue-500 hover:underline">View Project</a>
+                    </div>
+                </div>
+
+                <div
+                    class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-2xl transition-shadow duration-300">
+                    <img src="resources/jvscript.png" alt="Project 3" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">JavaScript</h3>
+                        <p class="text-gray-700 mb-4">A responsive blog platform developed using Next.js and
+                            styled-components.</p>
+                        <a href="#" class="text-blue-500 hover:underline">View Project</a>
+                    </div>
+                </div>
+
+            </div>
     </section>
-    
+
+    <footer class="bg-white py-12 px-6 border-t border-gray-200">
+        <div class="container mx-auto flex flex-col md:flex-row items-center justify-between gap-8">
+
+            <div class="text-gray-500 text-sm font-medium order-2 md:order-1">
+                © 2026 Stephen Duray. All rights reserved.
+            </div>
+
+            <div class="flex items-end space-x6 md:order-2 gap-3">
+                <img src="resources/facebook.png" alt="Facebook"
+                    class="h-5 w-auto md:h-6 hover:text-[#1877F2] transition-colors duration-300">
+                <img src="resources/instagram.png" alt="Instagram"
+                    class="h-5 w-auto md:h-6 hover:text-[#E4405F] transition-colors duration-300">
+                <img src="resources/github.png" alt="GitHub"
+                    class="h-5 w-auto md:h-6 hover:text-black transition-colors duration-300">
+            </div>
+    </footer>
 </body>
+
 </html>
