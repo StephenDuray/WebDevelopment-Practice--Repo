@@ -9,3 +9,11 @@ document.addEventListener('DOMContentLoaded', () => {
 		})
 	}
 })
+
+const toggleButton = document.getElementById('mobilemenubtn')
+const mobileMenu = document.getElementById('mobilemenu')
+
+toggleButton.addEventListener('click', () => {
+	mobileMenu.classList.toggle('hidden')
+	mobileMenu.classList.toggle('flex')
+})
