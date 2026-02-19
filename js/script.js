@@ -20,4 +20,8 @@ toggleButton.addEventListener('click', () => {
 	mobileMenu.classList.toggle('flex')
 })
 
+const submitButton = document.getElementById('submitbutton')
 
+submitButton.addEventListener('click', () => {	
+	alert('Your message has been sent!')
+})
