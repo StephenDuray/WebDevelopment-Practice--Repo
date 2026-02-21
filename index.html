@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 
 <head>
     <meta charset="UTF-8">
@@ -7,10 +7,11 @@
     <title>Stephen</title>
     <link rel=icon href="resources/letter-s.png" type="image/png">
     <script src="https://cdn.tailwindcss.com"></script>
+    <script src="js/script.js"></script>
     
-</head>
+    </head>
 
-<body class="bg-slate-300 min-h-screen">
+<body class="bg-slate-300 min-h-screen ">
     <header id="header" class="bg-white shadow-md fixed w-full z-50 h-16 md:h-18 transition-all duration-300">
         <div class="container mx-auto h-full flex items-center justify-between px-6 md:relative md:justify-center">
 
@@ -21,9 +22,9 @@
 
             <nav class="hidden md:flex items-center space-x-8 text-sm font-semibold tracking-wide">
                 <a href="index.html" class="text-gray-600 hover:text-black transition-colors">HOME</a>
-                <a href="about.html" class="text-gray-600 hover:text-black transition-colors">ABOUT</a>
+                <a href="#about" class="text-gray-600 hover:text-black transition-colors">ABOUT</a>
                 <a href="#projects" class="text-gray-600 hover:text-black transition-colors">PROJECTS</a>
-                <a href="contact.html" class="text-gray-600 hover:text-black transition-colors">CONTACT</a>
+                <a href="#contacts" class="text-gray-600 hover:text-black transition-colors">CONTACT</a>
             </nav>
 
             <button id="hamborgerbutton" class="md:hidden text-gray-600 focus:outline-none">
@@ -168,7 +169,7 @@
 
             <form id="contact-form" class="space-y-6">
                 <div>
-                    <label class="block text-sm font-medium text-gray-700 mb-1">Name</label>
+                    <label id="nameLabel" class="block text-sm font-medium text-gray-700 mb-1">Name</label>
                     <input type="text" name="name" placeholder="Your Name"
                         class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-[#C1C7D0] outline-none transition-all">
                 </div>
@@ -232,7 +233,6 @@
                 </div>
             </div>
     </footer>
-    <script src="js/script.js"></script>
 </body>
 
 </html>
